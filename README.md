@@ -88,28 +88,23 @@ $global:CertificatePassword = "<senha-do-certificado>"
 ```
 
 ### 5. Configurar Sites
-Atualize o arquivo `config/sites.json`:
-```json
-{
-  "sourceSiteUrl": "https://tenant.sharepoint.com/sites/origem",
-  "targetSiteUrl": "https://tenant.sharepoint.com/sites/destino"
-}
-```
+
+**Nota:** A configuração do arquivo `config/sites.json` não é mais necessária, pois os sites de origem e destino são solicitados durante a execução do script principal (`Main.ps1`).
 
 ## Execução
 
 ### Execução Completa
 ```powershell
-pwsh -File "d:/Metrô/CloneSharepoint/SharePointCloner/scripts/Main.ps1"
+pwsh -File "./scripts/Main.ps1"
 ```
 
 ### Execução de Scripts Individuais
 ```powershell
 # Apenas listas e bibliotecas
-. "d:/Metrô/CloneSharepoint/SharePointCloner/scripts/Clone-ListsAndLibraries.ps1"
+. ./scripts/Clone-ListsAndLibraries.ps1
 
 # Apenas arquivos
-. "d:/Metrô/CloneSharepoint/SharePointCloner/scripts/Clone-Files.ps1"
+. ./scripts/Clone-Files.ps1
 ```
 
 ## Logs
