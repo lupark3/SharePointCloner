@@ -16,16 +16,12 @@
 #
 
 # >>> SUBSTITUA PELO SEU APPLICATION (CLIENT) ID <<<
-$global:AppClientId = "5f1e0736-2af8-4471-8661-c8b9cb7e890b"
+$global:AppClientId = ""
 
 # >>> SUBSTITUA PELO SEU DIRECTORY (TENANT) ID <<<
-$global:AppTenantId = "83ffa6d5-5211-4b07-a665-b6634c7aeabe"
+$global:AppTenantId = ""
 
 
-# ┌───────────────────────────────────────────────────────────────┐
-# │  CONFIGURAÇÕES DE AUTENTICAÇÃO (OPCIONAL)                     │
-# └───────────────────────────────────────────────────────────────┘
-#
 # Para autenticação com certificado, configure os valores abaixo:
 # (Deixe em branco para usar autenticação interativa via browser)
 #
